@@ -1,0 +1,80 @@
+{
+    "id": "color-conversion",
+    "name": "color-conversion",
+    "description": "%description%",
+    "displayName": "%displayName%",
+    "version": "0.0.2",
+    "publisher": "小松鼠",
+    "engines": {
+        "HBuilderX": "^2.7.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "main": "./extension",
+    "activationEvents": [
+        "onCommand:colorConversion.ToRgb",
+        "onCommand:colorConversion.ToRgba",
+        "onCommand:colorConversion.ToHex",
+        "onCommand:colorConversion.ToHsl"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "colorConversion.ToRgb",
+                "title": "转RGB"
+            },
+            {
+                "command": "colorConversion.ToRgba",
+                "title": "转RGBA"
+            },
+            {
+                "command": "colorConversion.ToHex",
+                "title": "转HEX"
+            },
+            {
+                "command": "colorConversion.ToHsl",
+                "title": "转HSL"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "group": "z_commands",
+                    "when": "editorTextFocus && editorHasSelection",
+                    "id": "colorConversion",
+                    "title": "%editorRightMenu%"
+                },
+                {
+                    "command": "colorConversion.ToRgb",
+                    "group": "colorConversion@1",
+                    "when": "editorTextFocus"
+                },
+                {
+                    "command": "colorConversion.ToRgba",
+                    "group": "colorConversion@2",
+                    "when": "editorTextFocus"
+                },
+                {
+                    "command": "colorConversion.ToHex",
+                    "group": "colorConversion@3",
+                    "when": "editorTextFocus"
+                },
+                {
+                    "command": "colorConversion.ToHsl",
+                    "group": "colorConversion@4",
+                    "when": "editorTextFocus"
+                },
+                {
+                    "group": "z_commands"
+                }
+            ]
+        }
+    },
+    "extensionDependencies": [
+        "plugin-manager"
+    ],
+    "dependencies": {
+        "color": "^3.1.3"
+    }
+}

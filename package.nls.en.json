@@ -1,0 +1,5 @@
+{
+    "displayName": "color convert",
+    "description": "Color conversion, support conversion between various colors, such as hexadecimal color to RGB, color nouns to RGB",
+    "editorRightMenu": "color convert"
+}

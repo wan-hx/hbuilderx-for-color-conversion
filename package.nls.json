@@ -1,0 +1,5 @@
+{
+    "displayName": "颜色转换",
+    "description": "颜色转换，支持各种颜色之间互相转换，比如十六进制颜色转rgb，颜色名词转rgb",
+    "editorRightMenu": "颜色转换"
+}
