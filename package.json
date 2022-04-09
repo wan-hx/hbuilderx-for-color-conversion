@@ -6,7 +6,7 @@
     "version": "0.0.2",
     "publisher": "小松鼠",
     "engines": {
-        "HBuilderX": "^2.7.0"
+        "HBuilderX": "^3.2.6"
     },
     "categories": [
         "Other"
